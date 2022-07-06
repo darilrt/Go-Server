@@ -1,14 +1,14 @@
 package app
 
 import (
-	"go-server/pkg/api"
-	"net/http"
+    "go-server/pkg/api"
+    "net/http"
 )
 
 func NewRouter() http.Handler {
-	mux := http.NewServeMux();
-	
-	mux.HandleFunc("/tags", api.Tags)
+    mux := http.NewServeMux();
+    
+    mux.HandleFunc("/tags", api.Tags)
 
-	return mux
+    return mux
 }
